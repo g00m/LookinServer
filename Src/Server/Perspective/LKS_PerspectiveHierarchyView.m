@@ -52,7 +52,9 @@
         
         self.tableView = [[UITableView alloc] init];
         self.tableView.backgroundColor = [UIColor clearColor];
-        self.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
+#if os(iOS)
+        self.tableView.separatorStyle = UITableViewCellSeparatorStyleNone
+#endif
         self.tableView.delegate = self;
         self.tableView.dataSource = self;
         [self.scrollView addSubview:self.tableView];
