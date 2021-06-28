@@ -4,7 +4,7 @@
 import PackageDescription
 
 let package = Package(
-    name: "LookinServer",
+    name: "LookinServer+tv",
     platforms: [
         .iOS(.v9),
         .tvOS(.v9)
